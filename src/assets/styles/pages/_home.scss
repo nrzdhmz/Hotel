@@ -1,0 +1,33 @@
+.hero{
+  height: 100vh;
+  .container{
+    height: 100%;
+    position: relative;
+    .search{
+      border-radius: 10px;
+      height: 450px;
+      width: 400px;
+      background-color: #667C69;
+      z-index: 100;
+      position: absolute;
+      top: 100px;
+    }
+    .wallpaper{
+      border-radius: 10px;
+      width: 80%;
+      height: 550px;
+      top: 50px;
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      filter: brightness(90%);
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all 0.3s;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.filter-container {
+  display: flex;
+  padding-top: 80px;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgray;
+  input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 35px 20px 15px;
+    cursor: pointer;
+  }
+
+  .filter-box {
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: white;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0.1, 0.1, 0.2);
+    .search-button {
+      background: #1A3636;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 16px 20px 16px;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+  
+      .search-icon {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      border-radius: 50px;
+      background-color: lightgray;
+    }
+
+    label {
+      font-size: 12px;
+      margin-bottom: 5px;
+      position: absolute;
+      top: 15px;
+      left: 20px;
+    }
+
+    .guest-selector {
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      background: transparent;
+      padding: 35px 120px 15px 20px;
+      font-size: 13px;
+    }
+
+    .guest-dropdown {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 80px;
+      border-radius: 50px;
+      right: 0;
+      width: 300px;
+      z-index: 97;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      gap: 10px;
+
+      .guest-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+
+        span {
+          font-size: 12px;
+        }
+
+        .counter {
+          display: flex;
+          align-items: center;
+
+          button {
+            background: none;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 18px;
+            cursor: pointer;
+          }
+
+          span {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.place{
+  width: 250px;
+}
+.border-bottom{
+  border-bottom: 1px solid lightgrey;
+}
+.border-right {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: lightgray;
+  }
+}
+.ehh{
+  height: 1000px;
+}

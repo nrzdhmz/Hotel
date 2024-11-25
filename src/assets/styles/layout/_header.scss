@@ -1,0 +1,21 @@
+header{
+  width: 100%;
+  background-color: #1A3636;
+  display: flex;
+  height: 60px;
+  position: fixed;
+  z-index: 999;
+  .container{
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      display: flex;
+      color: #677D6A;
+      font-size: 1.5rem;
+      user-select: none;
+      .check{
+        color: #D6BD98;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+footer{
+  background-color: #1A3636;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  .container{
+    justify-content: space-between;
+    align-items: center;
+    .socials{
+      
+        ul{
+          display: flex;
+          gap: 5px;
+          li{
+            .social-icon{
+              font-size: 1.4rem;
+              cursor: pointer;
+              background-color: white;
+              color: #1A3636;
+            }
+          }
+        }
+      
+    }
+  }
+}

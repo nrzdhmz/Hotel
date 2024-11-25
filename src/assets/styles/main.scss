@@ -1,0 +1,23 @@
+// Variables and base styles
+@import './base/variables';
+@import './base/typography';
+@import './base/general';
+
+
+// Layout
+@import './layout/header';
+@import './layout/footer';
+@import './layout/container';
+
+// Components
+@import './components/button';
+@import './components/navbar';
+@import './components/cities';
+@import './components/inspiration';
+@import './components/datepicker';
+@import './components/filtereddata';
+
+// Pages
+@import './pages/home';
+@import './pages/about';
+@import './pages/filter';
