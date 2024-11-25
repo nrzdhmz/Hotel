@@ -18,6 +18,10 @@ const Cityoptions = () => {
                 <div className="price-tag">Average price: </div>
                 <div
                   className="avg-price">{city.avgPrice}
+
+
+
+                  <div></div>
                 </div>
                 </div>
               </div>
