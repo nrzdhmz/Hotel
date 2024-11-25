@@ -2,6 +2,8 @@ import React from 'react';
 import cityData from '../data/cityData';
 
 const Cityoptions = () => {
+
+
   return (
     <section className="city">
       <div className="container">
@@ -14,7 +16,9 @@ const Cityoptions = () => {
                 <div className="name">{city.name}</div>
                 <div className="wrap">
                 <div className="price-tag">Average price: </div>
-                <div className="avg-price">{city.avgPrice}</div>
+                <div
+                  className="avg-price">{city.avgPrice}
+                </div>
                 </div>
               </div>
             </div>
