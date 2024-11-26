@@ -64,6 +64,8 @@
       background: transparent;
       padding: 35px 120px 15px 20px;
       font-size: 13px;
+      min-width: 210px;
+  
     }
 
     .guest-dropdown {
@@ -73,27 +75,26 @@
       top: 80px;
       border-radius: 50px;
       right: 0;
-      width: 300px;
+      width: 400px;
       z-index: 97;
       background: white;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
+      padding: 30px;
       gap: 10px;
 
       .guest-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 10px;
+        padding:20px 0;
 
         span {
-          font-size: 12px;
+          font-size: 16px;
         }
 
         .counter {
           display: flex;
           align-items: center;
-
           button {
             background: none;
             border: 1px solid #ddd;
@@ -120,6 +121,11 @@
 }
 .border-right {
   position: relative;
+  &:hover{
+    &::after{
+      display: none;
+    }
+  }
 
   &::after {
     content: "";
@@ -130,7 +136,4 @@
     width: 1px;
     background-color: lightgray;
   }
-}
-.ehh{
-  height: 1000px;
 }

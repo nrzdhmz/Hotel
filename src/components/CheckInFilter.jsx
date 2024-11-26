@@ -4,6 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
 import { useSearchContext } from "../context/SearchContext";
 
+
 const CheckInFilter = () => {
   const { setSearchData } = useSearchContext();
   const [location, setLocation] = useState("");
