@@ -9,11 +9,11 @@ const HomePage = () => {
     <main>
       <section className="hero">
         <div className="container">
+        <div className="wallpaper">
+            <img src={Wallpaper} alt="wallpaper" />
+          </div>
           <div className="search">
             <CheckInFilter />
-          </div>
-          <div className="wallpaper">
-            <img src={Wallpaper} alt="wallpaper" />
           </div>
         </div>
       </section>

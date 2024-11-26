@@ -48,7 +48,7 @@ const FilterComponent = ({ searchData, setSearchData, handleFilter }) => {
 
   return (
     <div className="filter-box">
-      <div className="filter-item border-right">
+      <div className="filter-item border-right filter-where">
         <label>Where</label>
         <input
           type="text"
@@ -59,7 +59,7 @@ const FilterComponent = ({ searchData, setSearchData, handleFilter }) => {
         />
       </div>
 
-      <div className="filter-item border-right">
+      <div className="filter-item border-right check-in">
         <label>Check in</label>
         <DatePicker
           selected={checkInDate}
@@ -72,7 +72,7 @@ const FilterComponent = ({ searchData, setSearchData, handleFilter }) => {
         />
       </div>
 
-      <div className="filter-item border-right">
+      <div className="filter-item border-right check-out">
         <label>Check out</label>
         <DatePicker
           selected={checkOutDate}
@@ -86,7 +86,7 @@ const FilterComponent = ({ searchData, setSearchData, handleFilter }) => {
         />
       </div>
 
-      <div className="filter-item" ref={dropdownRef}>
+      <div className="filter-item guest-who" ref={dropdownRef}>
         <label>Who</label>
         <div className="guest-selector" onClick={() => setIsGuestDropdownOpen(!isGuestDropdownOpen)}>
           <span>{adults + children + infants} guests</span>

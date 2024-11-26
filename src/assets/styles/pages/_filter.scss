@@ -22,6 +22,24 @@
     position: relative;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0.1, 0.1, 0.2);
+    @media only screen and (max-width: 840px) {
+      width: 100%;
+      margin: 0 10px;
+    }
+    .filter-where{
+      @media only screen and (max-width: 840px) {
+        width: 100%;
+        margin: 0 10px;
+      }
+    }
+    .check-in,
+    .check-out,
+    .guest-who{
+      @media only screen and (max-width: 840px) {
+        display: none;
+      }
+    }
+    
     .search-button {
       background: #1A3636;
       color: white;
@@ -46,7 +64,10 @@
     cursor: pointer;
     &:hover{
       border-radius: 50px;
-      background-color: lightgray;
+      background-color: #EBEBEB;
+      @media only screen and (max-width: 840px) {
+        background-color: white;
+      }
     }
 
     label {
@@ -115,6 +136,9 @@
 }
 .place{
   width: 250px;
+  @media only screen and (max-width: 840px) {
+    width: 100%;
+  }
 }
 .border-bottom{
   border-bottom: 1px solid lightgrey;
@@ -135,5 +159,8 @@
     height: 60%;
     width: 1px;
     background-color: lightgray;
+    @media only screen and (max-width: 840px) {
+      display: none;
+    }
   }
 }

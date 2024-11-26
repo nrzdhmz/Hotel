@@ -6,6 +6,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FilterPage from "./pages/FilterPage";
 import { SearchProvider } from "./context/SearchContext";
+import PropertyDetailsPage from "./pages/PropertyDetailsPage";
+import BookingConfirmationPage from "./pages/BookingConfirmationPage";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<FilterPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/property/:id" element={<PropertyDetailsPage />} />
+          <Route path="/booking-confirmation" element={<BookingConfirmationPage />} />
         </Routes>
         <Footer />
       </Router>

@@ -4,7 +4,8 @@ import FilterComponent from "../components/FilterComponent";
 import placeholderData from "../data/placeholderData";
 import { FaStar } from "react-icons/fa6";
 import { IoMdHeartEmpty } from "react-icons/io";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Carousel styles
+import { Link } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from "react-responsive-carousel";
 
 const FilterPage = () => {
@@ -47,7 +48,8 @@ const FilterPage = () => {
       <div className="card-grid">
         {filteredData.length > 0 ? (
           filteredData.map((item) => (
-            <div key={item.id} className="card">
+          <div className="card" key={item.id}>
+            <Link to={`/property/${item.id}`} className="card-link">
               <IoMdHeartEmpty className="heart" />
               <Carousel
                 className="carousel"
@@ -93,30 +95,30 @@ const FilterPage = () => {
                   )
                 }
               >
-                {Array.from({ length: 5 }).map((_, index) => (
-                  <div key={index}>
-                    <img
-                      src={item.image}
-                      alt={`${item.title} - Slide ${index + 1}`}
-                      className="card-image"
-                    />
-                  </div>
-                ))}
+              {Array.from({ length: 5 }).map((_, index) => (
+                <div key={index}>
+                  <img
+                    src={item.image}
+                    alt={`${item.title} - Slide ${index + 1}`}
+                    className="card-image"
+                  />
+                </div>
+              ))}
               </Carousel>
-
-
+              
               <div className="card-details">
-                <div className="card-title">{item.title}</div>
-                <div className="card-distance">{item.distance}</div>
-                <div className="card-date">{item.date}</div>
-                <div className="card-price">
-                  {item.price} <p>night</p>
-                </div>
-                <div className="card-rating">
-                  <FaStar />
-                  {item.rating}
-                </div>
+              <div className="card-title">{item.title}</div>
+              <div className="card-distance">{item.distance}</div>
+              <div className="card-date">{item.date}</div>
+              <div className="card-price">
+                {item.price} <p>night</p>
               </div>
+              <div className="card-rating">
+                <FaStar />
+                {item.rating}
+              </div>
+            </div>
+          </Link>
             </div>
           ))
         ) : (
